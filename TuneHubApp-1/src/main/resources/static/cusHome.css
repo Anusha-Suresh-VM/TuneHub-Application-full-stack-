@@ -1,0 +1,116 @@
+@charset "ISO-8859-1";
+body{
+	
+	
+	margin:0;
+	padding:0;
+	background-color:black;
+	
+}
+h1{
+	text-align: center;
+	color:white;
+	font-weight: bolder;
+	font-family:sans-serif;
+}
+a{
+	
+	
+	padding-top:50px;
+	text-decoration: none;
+	
+	font-weight:bold;
+	color:white;
+}
+nav{
+	background-color: green;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  
+}
+
+ul{
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li{
+	
+	float:right;
+	
+	
+}
+li a{
+	 display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size:20px;
+  font-family: sans-serif;
+	
+}
+h2{
+	padding-left:30px;
+	
+	font-family: sans-serif;
+}
+*{
+	box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 32%;
+  animation: enlarge 17s infinite;
+  padding: 0 10px;
+}
+@keyframes enlarge {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+	margin: 0 -5px;
+	padding-top:30px;
+	}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+  box-shadow: 0 5px 10px 0 green; /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: black;
+  color:white;
+  height:100%;
+  border-radius: 0.8em;
+}
+.column :hover {
+	background-color: white;
+	color:black;
+	a{
+	color:black;
+	}
+}
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}

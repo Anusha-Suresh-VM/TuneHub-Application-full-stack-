@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>TuneHub | View Songs</title>
+<link rel="stylesheet" href="./viewSongs.css">
+</head>
+<body>
+<nav class="navbar">
+
+ <h2 id="h2">TuneHub</h2>
+ <ul>
+
+ <li><a href="/logout">Logout</a></li>
+ </ul>
+</nav>
+<h1>All Songs</h1>
+<table border="1">
+	<tr>
+		<td>Name</td>
+		<td>Artist</td>
+		<td>Genre</td>
+		<td>Song Link</td>
+	</tr>
+	<tr th:each="songslist : ${songslist}">
+		<td th:text="${songslist.name}"></td>
+		<td th:text="${songslist.artist}"></td>
+		<td th:text="${songslist.genre}"></td>
+		<td th:text="${songslist.link}"></td>
+		<td><audio controls>
+		<source th:src="${songslist.link}" type="audio/mpeg">
+		</audio>
+		</td>
+
+	</tr>
+
+</table>
+
+</body>
+</html>

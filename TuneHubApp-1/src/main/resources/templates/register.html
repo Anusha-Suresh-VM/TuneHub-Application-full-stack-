@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/register.css">
+<title>TuneHub | Register</title>
+</head>
+<body>
+<div>
+<nav class="navbar">
+
+ <h2 id="h2">TuneHub</h2>
+ <ul>
+ <li><a href="/map-login">Login</a></li>
+ 
+ </ul>
+</nav>
+</div>
+<div class="form">
+<form action="/register" method="post">
+<h3>Sign up to start listening</h3>
+<label>UserName:</label>
+<input type="text" name="username">
+<br></br>
+<label>  Email ID:  </label>
+<input type="email" name="email">
+<br></br>
+<label>Password:</label>
+<input type="password" name="password">
+<br></br>
+<p><label>Gender : </label>
+Male<input type="radio" name="gender" value="male">
+Female<input type="radio" name="gender" value="female">
+Other<input type="radio" name="gender" value="other"></p>
+<br>
+<p><label>Role : </label>
+Admin<input type="radio" name="role" value="admin">
+User<input type="radio" name="role" value="user"></p>
+<br>
+<label>Address:</label>
+<textarea name="address"></textarea>
+<br>
+<br>
+<input id="button" type="submit" value="REGISTER">
+</form>
+</div>
+
+</body>
+</html>

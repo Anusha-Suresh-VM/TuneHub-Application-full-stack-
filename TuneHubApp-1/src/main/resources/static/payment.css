@@ -1,0 +1,54 @@
+@charset "ISO-8859-1";
+body{
+	margin:0;
+	padding:0;
+	background-color: black;
+}
+h1,p{
+	color:green;
+	text-align: center;
+}
+
+nav{
+	background-color: green;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  
+}
+
+ul{
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li{
+	
+	float:right;
+	
+	
+}
+li a{
+	 display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size:20px;
+  font-family: sans-serif;
+	
+}
+.buy-button{
+	margin-left:45%;
+	color:white;
+	border-radius:0.5em;
+	background-color: green;
+	height:40px;
+	width:150px;
+	margin-top:20px;
+}

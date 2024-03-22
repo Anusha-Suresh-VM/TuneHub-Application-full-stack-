@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>TuneHub | View PlayList</title>
+<link href="./viewSongs.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+
+ <h2 id="h2">TuneHub</h2>
+ <ul>
+
+ <li><a href="/logout">Logout</a></li>
+ </ul>
+</nav>
+<h1>Playlist</h1>
+<div class="form">
+<table border="1">
+<thead>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Song</th>
+		
+	</tr>
+</thead>
+<tbody>
+	<tr th:each="plist : ${plist}">
+		<td th:text="${plist.id}"></td>
+		<td th:text="${plist.name}"></td>
+		<td>
+		<ul>
+		<li th:each="s:${plist.song}">
+		<span th:text="${s.name}"></span>
+			<audio controls>
+				<source src="${s.link}" type="audio/mpeg">
+			</audio>
+		</li>
+		</ul>
+		</td>
+		
+		
+
+	</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

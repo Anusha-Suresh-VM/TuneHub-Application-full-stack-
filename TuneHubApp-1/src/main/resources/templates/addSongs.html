@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>TuneHub | Add Songs</title>
+<link rel="stylesheet" href="./addSongs.css">
+</head>
+<body>
+<nav class="navbar">
+
+ <h2 id="h2">TuneHub</h2>
+ <ul>
+
+ <li><a href="/logout">Logout</a></li>
+ </ul>
+</nav>
+
+<div class="form">
+
+<form action="/add-song" method="post">
+<h3>Add Songs</h3>
+<label>Song Name  :</label>
+<input type="text" name="name">
+<br>
+<label>Song Artist:</label>
+<input type="text" name="artist">
+<br>
+<label>Song Genre :</label>
+<input type="text" name="genre">
+<br>
+<label>Song Link  :</label>
+<input type="text" name="link">
+<br>
+<input id="button" type="submit" value="ADD SONG">
+
+
+</form>
+</div>
+</body>
+</html>

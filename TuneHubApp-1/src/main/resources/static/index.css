@@ -1,0 +1,78 @@
+@charset "ISO-8859-1";
+h1{
+	color:green;
+	display:flex;
+	justify-content: center;
+	
+	padding-top: 150px;
+	font-family: sans;
+	font-weight: bolder;
+	font-size:80px;
+	
+	
+	
+}
+h1:hover{
+	color:black;
+}
+button{
+	
+	margin-left:45%;
+	height:50px;
+	width:200px;
+	border-radius: 0.5em;
+	background-color: green;
+	color:white;
+	animation: enlarge 7s infinite;
+	display: block;
+	justify-content: center;
+}
+body{
+	margin:0;
+	padding:0;
+	background-image: url("https://cdn.pixabay.com/photo/2013/11/03/08/05/cheers-204742_640.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-items: center;
+	
+}
+h4{
+	
+	color:white;
+	text-align: center;
+	
+}
+h5{
+	text-align: center;
+	color:pink;
+}
+button:hover{
+	background-color:black;
+	color:white;
+}
+.logo{
+	position: fixed; 
+     
+     margin-top:50px;
+    left: 49%; 
+    transform: translateX(-50%);
+    z-index: 999;
+}
+.logo img{
+	height: 140px;
+    width: auto; 
+    display: block; 
+    animation: enlarge 6s infinite;
+    width: 180px;
+    
+}
+@keyframes enlarge {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
